@@ -941,7 +941,7 @@ nav {
     width: 100%;
     height: 80vh;
     margin-top:1px; /* gap from nav bar */
-    background-image: url("../img/about.webp"); /* change image */
+    background-image: url("about.webp"); /* change image */
     background-size: cover;
     background-position: center;
     position: relative;
@@ -2828,3 +2828,4 @@ nav {
         border-radius: 12px;
     }
 }
+
