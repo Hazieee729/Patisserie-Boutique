@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet"> 
+
+
+<!--remixcon link -->
+<link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<script src="../Java/java.js"></script>
+
+<body>
+
+    <!-- =========== NAVIGATION BAR =========== -->
+    <nav>
+        <!-- TOP ROW -->
+        <div class="nav-top">
+            <!-- HAMBURGER (MOBILE) -->
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+              <div class="close-menu" onclick="closeMenu()">×</div>
+
+            <!-- LOGO CENTER -->
+             <a href="index.html">
+            <img src="../img/FYP logo.png" class="nav-logo" alt="Logo">
+            </a>
+
+
+            <!-- CART ICON RIGHT -->
+           <a href="cart.html" class="cart-icon">
+    <i class="ri-shopping-cart-2-line"></i>
+    <span class="cart-count" id="cart-count">0</span>
+</a>
+        </div>
+
+        <!-- SECOND ROW LINKS -->
+        <ul class="nav-links">
+            <div class="nav-left">
+                <li><a href="about.html">About</a></li>
+                <li><a href="product.html">Products</a></li>
+            </div>
+        
+            <div class="nav-right">
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="preorder.html">Pre Order</a></li>
+            </div>
+        </ul>
+
+    <!-- Menu Toggle Script -->
+    <script>
+        function toggleMenu() {
+            document.querySelector(".nav-links").classList.toggle("active");
+        }
+    </script>
+
+
+<!-- ===== PRODUCT DETAIL SECTION ===== -->
+<section class="product-detail">
+
+    <!-- LEFT : IMAGE -->
+    <div class="product-image">
+        <img src="../img/cake4.webp" alt="Yam Burnt Cheese Cake">
+    </div>
+
+    <!-- RIGHT : INFO -->
+    <div class="product-info">
+
+        <h1 class="product-title">
+            Yam Burnt Cheese Cake
+        </h1>
+
+        <p class="product-price">RM 16.00</p>
+
+        <p class="product-desc">
+            A smooth and creamy burnt cheese cake infused with naturally sweet yam. 
+            The caramelized top adds a slightly smoky note while the yam provides a delicate 
+            earthy sweetness, creating a comforting yet indulgent dessert.
+        </p>
+
+        <!-- ACCORDION -->
+        <div class="accordion">
+
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <span>Allergens</span>
+                    <span class="icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    Contains dairy, eggs, and gluten.
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <span>Enjoy In-Store</span>
+                    <span class="icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    Best savored fresh in-store to enjoy the rich caramelized top and creamy yam interior. 
+                    Perfectly paired with a cup of hot tea or coffee for a delightful treat.
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+
+
+<!-- ===== FOOTER SECTION ===== -->
+<footer class="footer-section">
+
+    <div class="footer-container">
+
+        <!-- LEFT -->
+        <div class="footer-left">
+            <img src="../img/FYP logo.png" alt="Logo" class="footer-logo">
+        </div>
+
+        <!-- MIDDLE -->
+        <div class="footer-middle">
+            <h4>MORE</h4>
+             <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="product.html">Products</a>
+            <a href="contact.html">Contact</a>
+            <a href="preorder.html">Pre Order</a>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="footer-right">
+            <h4>FOLLOW US</h4>
+            <p>Stay connected and follow us on our social media channels.</p>
+
+            <div class="footer-social-box">
+                <a href="https://www.facebook.com/Patisserie.BoutiQue/photos" aria-label="Facebook">
+                    <i class="ri-facebook-fill"></i>
+                </a>
+                <a href="https://www.instagram.com/patisserie.boutique?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" aria-label="Instagram">
+                    <i class="ri-instagram-line"></i>
+                </a>
+                <a href="https://wa.me/60149019268" aria-label="Whatsapp">
+                    <i class="ri-whatsapp-line"></i>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- COPYRIGHT -->
+    <div class="footer-copyright">
+        © 2025 Pâtisserie Boutique. All Rights Reserved. Designed by Hazel Yip Pey Wei.
+    </div>
+
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet"> 
+
+
+<!--remixcon link -->
+<link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<script src="../Java/java.js"></script>
+
+<body>
+
+    <!-- =========== NAVIGATION BAR =========== -->
+    <nav>
+        <!-- TOP ROW -->
+        <div class="nav-top">
+            <!-- HAMBURGER (MOBILE) -->
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+              <div class="close-menu" onclick="closeMenu()">×</div>
+
+            <!-- LOGO CENTER -->
+             <a href="index.html">
+            <img src="../img/FYP logo.png" class="nav-logo" alt="Logo">
+            </a>
+
+
+            <!-- CART ICON RIGHT -->
+           <a href="cart.html" class="cart-icon">
+    <i class="ri-shopping-cart-2-line"></i>
+    <span class="cart-count" id="cart-count">0</span>
+</a>
+        </div>
+
+        <!-- SECOND ROW LINKS -->
+        <ul class="nav-links">
+            <div class="nav-left">
+                <li><a href="about.html">About</a></li>
+                <li><a href="product.html">Products</a></li>
+            </div>
+        
+            <div class="nav-right">
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="preorder.html">Pre Order</a></li>
+            </div>
+        </ul>
+
+    <!-- Menu Toggle Script -->
+    <script>
+        function toggleMenu() {
+            document.querySelector(".nav-links").classList.toggle("active");
+        }
+    </script>
+
+
+
+<!-- ===== PRODUCT HERO SECTION ===== -->
+<section class="product-hero preorder-hero">
+    <h1 class="product-hero-title">Preorder Menu</h1>
+</section>
+
+<!-- ===== SORT BUTTON ===== -->
+<section class="menu-section">
+
+    <!-- ===== BROWSE BUTTON (PAGE-SPECIFIC) ===== -->
+<section class="menu-section">
+
+    <div class="browse-wrapper">
+        <button class="browse-btn" onclick="toggleBrowse()">Browse ▾</button>
+
+        <div class="browse-dropdown" id="browseDropdown">
+            <a href="wc1.html">Raspberry Chocolate Gateaux</a>
+            <a href="wc4.html">Blueberry Meringue Cheese Cake</a>
+            <a href="wc5.html">Crunchy Matcha Chocolate Mousse Cake</a>
+            <a href="wc6.html">Fruity Crepe Cake</a>
+            <a href="wc8.html">Baileys Chocolate</a>
+            <a href="wc10.html">Caramelised Nutty Nutella Cake</a>
+            <a href="wc12.html">Soufflé Cheese Cake</a>
+            <a href="wc14.html">Berries Pavlova</a>
+            <a href="wc15.html">Devil Matcha Cake</a>
+
+
+        </div>
+    </div>
+
+
+    <!-- CHANGED TITLE -->
+    <h2 class="menu-title" id="pastries">Whole Cakes</h2>
+
+    <!-- Menu Items -->
+    <div class="menu-grid">
+
+
+        <!-- ITEM 1 -->
+        <a href="wc1.html" class="menu-card">
+            <div class="menu-img">
+                <img src="../img/wc1.webp" alt="Valentine's special - Raspberry Chocolate Gateaux">
+            </div>
+            <div class="menu-info">
+                <p class="menu-name">Valentine's special - Raspberry Chocolate Gateaux</p>
+                <p class="menu-price">RM 230.00</p>
+            </div>
+        </a>
+
+     
+
+        <!-- ITEM 4 -->
+        <a href="wc4.html" class="menu-card">
+            <div class="menu-img">
+                <img src="../img/wc4.webp" alt="Blueberry Meringue Cheese Cake">
+            </div>
+            <div class="menu-info">
+                <p class="menu-name">Blueberry Meringue Cheese Cake</p>
+                <p class="menu-price">RM 210.00</p>
+            </div>
+        </a>
+
+        <!-- ITEM 5 -->
+        <a href="wc5.html" class="menu-card">
+            <div class="menu-img">
+                <img src="../img/wc5.webp" alt="Crunchy Matcha Chocolate Mousse Cake">
+            </div>
+            <div class="menu-info">
+                <p class="menu-name">Crunchy Matcha Chocolate Mousse Cake</p>
+                <p class="menu-price">RM 190.00</p>
+            </div>
+        </a>
+
+        <!-- ITEM 6 -->
+        <a href="wc6.html" class="menu-card">
+            <div class="menu-img">
+                <img src="../img/wc6.webp" alt="Fruity Crepe Cake">
+            </div>
+            <div class="menu-info">
+                <p class="menu-name">Fruity Crepe Cake</p>
+                <p class="menu-price">RM 190.00</p>
+            </div>
+        </a>
+
+      
+        <!-- ITEM 8 -->
+        <a href="wc8.html" class="menu-card">
+            <div class="menu-img">
+                <img src="../img/wc8.webp" alt="Baileys Chocolate">
+            </div>
+            <div class="menu-info">
+                <p class="menu-name">Baileys Chocolate</p>
+                <p class="menu-price">RM 179.90 </p>
+            </div>
+        </a>
+
+    
+
+        <!-- ITEM 10 -->
+        <a href="wc10.html" class="menu-card">
+            <div class="menu-img">
+                <img src="../img/wc10.webp" alt="Caramelised Nutty Nutella Cake">
+            </div>
+            <div class="menu-info">
+                <p class="menu-name">Caramelised Nutty Nutella Cake</p>
+                <p class="menu-price">RM 220.00</p>
+            </div>
+        </a>
+
+        
+
+        
+        <!-- ITEM 12 -->
+        <a href="wc12.html" class="menu-card">
+            <div class="menu-img">
+                <img src="../img/wc12.webp" alt="Soufflé Cheese Cake">
+            </div>
+            <div class="menu-info">
+                <p class="menu-name">Soufflé Cheese Cake</p>
+                <p class="menu-price">RM 180.00</p>
+            </div>
+        </a>
+
+
+        <!-- ITEM 14 -->
+        <a href="wc14.html" class="menu-card">
+            <div class="menu-img">
+                <img src="../img/wc14.webp" alt="Berries Pavlova">
+            </div>
+            <div class="menu-info">
+                <p class="menu-name">Berries Pavlova</p>
+                <p class="menu-price">RM 210.00</p>
+            </div>
+        </a>
+
+        <!-- ITEM 15 -->
+        <a href="wc15.html" class="menu-card">
+            <div class="menu-img">
+                <img src="../img/wc15.webp" alt="Devil Matcha Cake">
+            </div>
+            <div class="menu-info">
+                <p class="menu-name">Devil Matcha Cake</p>
+                <p class="menu-price">RM 180.00</p>
+            </div>
+        </a>
+
+    </div>
+</section>
+
+
+
+<!-- ===== FOOTER SECTION ===== -->
+<footer class="footer-section">
+
+    <div class="footer-container">
+
+        <!-- LEFT -->
+        <div class="footer-left">
+            <img src="../img/FYP logo.png" alt="Logo" class="footer-logo">
+        </div>
+
+        <!-- MIDDLE -->
+        <div class="footer-middle">
+            <h4>MORE</h4>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="product.html">Products</a>
+            <a href="contact.html">Contact</a>
+            <a href="preorder.html">Pre Order</a>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="footer-right">
+            <h4>FOLLOW US</h4>
+            <p>Stay connected and follow us on our social media channels.</p>
+
+            <div class="footer-social-box">
+                <a href="https://www.facebook.com/Patisserie.BoutiQue/photos" aria-label="Facebook">
+                    <i class="ri-facebook-fill"></i>
+                </a>
+                <a href="https://www.instagram.com/patisserie.boutique?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" aria-label="Instagram">
+                    <i class="ri-instagram-line"></i>
+                </a>
+                <a href="https://wa.me/60149019268" aria-label="Whatsapp">
+                    <i class="ri-whatsapp-line"></i>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- COPYRIGHT -->
+    <div class="footer-copyright">
+        © 2025 Pâtisserie Boutique. All Rights Reserved. Designed by Hazel Yip Pey Wei.
+    </div>
+
+</footer>
+
+
+</body>
+</html>
+
