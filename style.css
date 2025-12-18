@@ -47,15 +47,15 @@ nav {
     right: 0;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 35px; /* icon size */
+    font-size: 35px; 
     color: #000;    
     cursor: pointer;
     transition: color 0.3s, transform 0.3s; 
 }
 
 .cart-icon:hover {
-    color: #88102C;     /* hover color */
-    transform: translateY(-50%) scale(1.1); /* slightly bigger on hover */
+    color: #88102C;    
+    transform: translateY(-50%) scale(1.1); 
 } 
 
 
@@ -74,7 +74,7 @@ nav {
     align-items: center;
     justify-content: center;
     font-family: "Lato", sans-serif;
-    display: none; /* hidden until add to cart */
+    display: none; 
 }
 
 
@@ -99,7 +99,7 @@ nav {
     background-color: #88102C;
 
     display: flex;
-    justify-content: space-between; /* LEFT vs RIGHT */
+    justify-content: space-between; 
     align-items: center;
 }
 
@@ -107,8 +107,8 @@ nav {
 .nav-left,
 .nav-right {
     display: flex;
-    gap: 60px; /* spacing between items */
-    padding: 0 250px; /* increase side padding */
+    gap: 60px; 
+    padding: 0 250px; 
 }
 
 /* Links */
@@ -227,10 +227,10 @@ nav {
 /* Dots container - on top of slideshow */
 .dots-container {
     position: absolute;
-    bottom: 10px;          /* move INSIDE slideshow */
+    bottom: 10px;          
     left: 50%;
     transform: translateX(-50%);
-    z-index: 6;            /* above overlay & text */
+    z-index: 6;            
     text-align: center;
 }
 
@@ -277,7 +277,7 @@ nav {
 .about-container {
      max-width: 1200px;
     margin: 0 auto;
-    padding: 0 60px;   /* equal left & right */
+    padding: 0 60px;   
     display: flex;
     gap: 60px;
     align-items: center;
@@ -285,14 +285,14 @@ nav {
 
 /* LEFT IMAGE */
 .about-image {
-    padding-left: 30px;   /* your spacing */
+    padding-left: 30px;   
     padding-top: 30px;
 }
 
 .about-image-wrapper {
     width: 300px;
     border-radius: 20px;
-    overflow: hidden;     /* 🔥 THIS FIXES IT */
+    overflow: hidden;     
 }
 
 .about-image-wrapper img {
@@ -391,12 +391,12 @@ nav {
     display: flex;
     justify-content: center;
     gap: 15px;
-    flex-wrap: wrap; /* responsive */
+    flex-wrap: wrap; 
 }
 
 .featured-item {
-     width: 250px; /* fixed width for all items */
-    height: 300px; /* fixed height for all items */
+     width: 250px; 
+    height: 300px; 
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -405,7 +405,7 @@ nav {
 
 .featured-item img {
     width: 100%;
-    height: 200px; /* fixed height for all images */
+    height: 200px; 
     border-radius: 20px;
     object-fit: cover;
     transition: transform 0.3s ease;
@@ -455,13 +455,13 @@ nav {
 /* Row of round images */
 .highlight-row {
     display: flex;
-    justify-content: space-between; /* equally spaced */
+    justify-content: space-between; 
     gap: 30px;
     flex-wrap: wrap;
 }
 
 .highlight-item {
-    flex: 1; /* equal width for all items */
+    flex: 1; 
     max-width: 300px;
     display: flex;
     flex-direction: column;
@@ -471,7 +471,7 @@ nav {
 .highlight-item img {
     width: 150px;
     height: 150px;
-    border-radius: 50%; /* makes it round */
+    border-radius: 50%;
     object-fit: cover;
     margin-bottom: 15px;
     transition: transform 0.3s ease;
@@ -504,7 +504,7 @@ nav {
 .footer-section {
     width: 100vw;
     margin-left: calc(-50vw + 50%);
-    margin-top: -50px;   /* 🔥 THIS fixes the gap */
+    margin-top: -50px;   
     background-color: #88102C;
     color: #E7AFA0;
     font-family: "Lato", sans-serif;
@@ -514,7 +514,7 @@ nav {
 .footer-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 60px 80px 40px; /* bottom smaller */
+    padding: 60px 80px 40px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -637,9 +637,9 @@ nav {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-     max-width: 600px;      /* controls overall width */
-    margin: 0 auto;        /* centers horizontally */
-    justify-items: center; /* centers items in each column */
+     max-width: 600px;      
+    margin: 0 auto;        
+    justify-items: center; 
 }
 
 .featured-item {
@@ -705,15 +705,15 @@ nav {
 
     .nav-links {
     position: absolute;
-    top: 90px; /* adjust based on your nav height */
+    top: 90px; 
     left: 0;
     width: 100%;
     flex-direction: column;
     align-items: center;
     background-color: #fff;
     gap: 20px;
-    padding: 0; /* start closed */
-    max-height: 0; /* hidden initially */
+    padding: 0; 
+    max-height: 0; 
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     z-index: 999;
@@ -723,8 +723,8 @@ nav {
 
 .nav-links a {
     position: relative;
-    text-decoration: none; /* remove default underline */
-    color: #CADB8F; /* adjust color if needed */
+    text-decoration: none; 
+    color: #CADB8F; 
     transition: color 0.3s ease;
 }
 
@@ -732,15 +732,15 @@ nav {
     content: "";
     position: absolute;
     width: 0;
-    height: 2px; /* thickness of underline */
-    bottom: -3px; /* space below text */
+    height: 2px; 
+    bottom: -3px; 
     left: 0;
-    background-color: #CADB8F; /* underline color */
+    background-color: #CADB8F; 
     transition: width 0.3s ease;
 }
 
 .nav-links a:hover::after {
-    width: 100%; /* animate underline across full link */
+    width: 100%; 
 }
 
 
@@ -810,9 +810,9 @@ nav {
     
 .featured-item img {
     width: 100%;
-    height: 180px;        /* adjust as you like */
-    object-fit: cover;   /* prevents image distortion */
-    border-radius: 8px;  /* optional, looks nicer */
+    height: 180px;        
+    object-fit: cover;   
+    border-radius: 8px;  
 }
 
     /* HIGHLIGHT */
@@ -864,7 +864,7 @@ nav {
     /* NAV */
 
     .nav-links {
-    top: 60px; /* adjust based on your nav height */
+    top: 60px; 
     }
 
     .nav-links a {
@@ -940,8 +940,8 @@ nav {
 .about-hero {
     width: 100%;
     height: 80vh;
-    margin-top:1px; /* gap from nav bar */
-    background-image: url("about.webp"); /* change image */
+    margin-top:1px; 
+    background-image: url("about.webp"); 
     background-size: cover;
     background-position: center;
     position: relative;
@@ -988,7 +988,7 @@ nav {
 
     display: flex;
     align-items: center;
-    justify-content: space-between; /* space between text & image */
+    justify-content: space-between; 
     gap: -150px;
 }
 
@@ -1066,18 +1066,18 @@ nav {
 
 .mission-vision-container {
     display: flex;
-    flex-direction: column; /* stack vertically */
-    gap: 40px; /* space between columns */
-    max-width: 1200px; /* control overall width */
-    margin: 0 auto; /* center horizontally */
-    padding: 40px 40px; /* add some padding around */
+    flex-direction: column; 
+    gap: 40px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 40px 40px; 
 }
 
 /* COLUMN STYLING */
 .mission-column,
 .vision-column {
-     padding: 50px 30px; /* slightly taller */
-    border-radius: 30px; /* rounded corners */
+     padding: 50px 30px; 
+    border-radius: 30px; 
     text-align: center;
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
@@ -1092,7 +1092,7 @@ nav {
 
 .vision-column {
     background-color: #CADB8F;
-    color: #88102C; /* darker text for contrast */
+    color: #88102C; 
 }
 
 /* TITLE */
@@ -1125,27 +1125,27 @@ nav {
 
 .goals-image-wrapper {
     width: 100%;
-    height: 500px; /* set desired height */
-    overflow: hidden; /* ensures image stays inside container */
-    position: relative; /* so text can be absolutely positioned inside */
+    height: 500px; 
+    overflow: hidden; 
+    position: relative; 
 }
 
 .goals-image-wrapper img {
     width: 100%;
-    height: 100%;       /* fill the wrapper */
-    object-fit: cover;  /* maintain aspect ratio, cover fully */
+    height: 100%;       
+    object-fit: cover; 
     display: block;
 }
 
 .goals-text {
     position: absolute;
-    top: 50%;              /* vertically center inside wrapper */
-    left: 5%;              /* slightly from left */
+    top: 50%;              
+    left: 5%;            
     transform: translateY(-50%);
     background-color: #fff;
     padding: 40px 30px;
     border-radius: 25px;
-    max-width: 40%;        /* width of white container */
+    max-width: 40%;        
     box-shadow: 0 15px 35px rgba(0,0,0,0.2);
     text-align: center;
 }
@@ -1170,9 +1170,9 @@ nav {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    align-items: center;  /* vertical center */
-    justify-content: center; /* center horizontally if space left */
-    gap: 60px; /* space between image & text */
+    align-items: center;  
+    justify-content: center; 
+    gap: 60px;
 }
 
 /* IMAGE SIDE */
@@ -1184,8 +1184,8 @@ nav {
 
 .why-choose-us-image img {
     width: 100%;
-    max-width: 450px;   /* adjust as needed */
-    border-radius: 25px; /* rounded border */
+    max-width: 450px;   
+    border-radius: 25px; 
     object-fit: cover;
 }
 
@@ -1217,13 +1217,13 @@ nav {
 
     /* ABOUT HERO */
     .about-hero-title {
-        font-size: 48px; /* slightly smaller */
+        font-size: 48px; 
     }
 
     /* ABOUT STORY */
     .about-story-container {
         margin: 0 50px;
-        gap: 40px; /* closer text & image */
+        gap: 40px; 
     }
 
     .about-story-text p {
@@ -1332,8 +1332,8 @@ nav {
     .goals-image-wrapper {
         position: relative;
         width: 100%;
-        height: auto;       /* image adapts naturally */
-        overflow: visible;  /* text fully visible */
+        height: auto;       
+        overflow: visible;  
     }
 
     .goals-image-wrapper img {
@@ -1345,12 +1345,12 @@ nav {
     }
 
     .goals-text {
-        position: relative;   /* stack below image */
+        position: relative;   
         top: auto;
         left: auto;
         transform: none;
         max-width: 90%;
-        margin: 20px auto 0;  /* normal margin below image */
+        margin: 20px auto 0;  
         padding: 20px 15px;
         font-size: 20px;
         line-height: 1.5;
@@ -1373,7 +1373,7 @@ nav {
         flex-direction: column;
         gap: 30px;
         text-align: center;
-        margin-top: 30px;   /* small normal gap from goals text */
+        margin-top: 30px;  
     }
 
     .why-choose-us-text {
@@ -1406,7 +1406,7 @@ nav {
 
     /* ABOUT HERO */
  .about-hero {
-        height: 50vh; /* reduce height for small screens */
+        height: 50vh; 
     }
 
     .about-hero-title {
@@ -1446,24 +1446,24 @@ nav {
 
  /* Mission & Vision stacked vertically */
     .mission-vision-container {
-        gap: 10px;            /* smaller gap between columns */
-        padding: 10px 10px;  /* reduce padding around section */
+        gap: 10px;            
+        padding: 10px 10px; 
         margin-top: -30px;
     }
 
     .mission-column,
     .vision-column {
-        padding: 10px 10px;  /* reduce column padding */
+        padding: 10px 10px;  
     }
 
     .mission-column h2,
     .vision-column h2 {
-        font-size: 16px;     /* smaller title */
+        font-size: 16px;    
     }
 
     .mission-column p,
     .vision-column p {
-        font-size: 12px;     /* smaller paragraph */
+        font-size: 12px;    
     }
 
     
@@ -1473,7 +1473,7 @@ nav {
     .goals-image-wrapper {
         position: relative;
         width: 100%;
-        height: auto;       /* let height adapt */
+        height: auto;       
         overflow: hidden;
     }
 
@@ -1488,12 +1488,12 @@ nav {
 
     /* Text stacked below image */
     .goals-text {
-        position: relative;     /* stack naturally under image */
+        position: relative;     
         top: auto;
         left: auto;
-        transform: none;        /* remove absolute transform */
+        transform: none;       
         max-width: 90%;
-        margin: 10px auto 0;    /* spacing above text */
+        margin: 10px auto 0;    
         padding: -30px -20px;
         font-size: 11px;
         line-height: 1.4;
@@ -1512,13 +1512,13 @@ nav {
 
     /* Why Choose Us stacked */
    .why-choose-us-container {
-        flex-direction: column; /* stack image and text vertically */
-        margin-top: -60px;    /* reduce space from previous section */
+        flex-direction: column; 
+        margin-top: -60px;    
     }
 
     .why-choose-us-text h2 {
         font-size: 18px;
-        margin-bottom: 8px; /* smaller space below title */
+        margin-bottom: 8px; 
     }
 
     .why-choose-us-text p {
@@ -1539,8 +1539,8 @@ nav {
 /* ===== PRODUCT HERO SECTION ===== */
 .product-hero {
     width: 100%;
-    height: 80vh;                 /* adjust height if needed */
-    margin-top: 1px;              /* small gap from nav */
+    height: 80vh;                 
+    margin-top: 1px;              
     background-position: center;
     position: relative;
     /* Center title */
@@ -1552,7 +1552,7 @@ nav {
 
  
 .cake-hero{
-     background-image: url("../img/product.webp"); /* change to your image */
+     background-image: url("product.webp"); 
 }
 
 /* Dark overlay for readability */
@@ -1576,12 +1576,12 @@ nav {
 
 
 .pastries-hero{
-    background-image: url("../img/pastries1.webp");
+    background-image: url("pastries1.webp");
 }
 
 
 .catering-hero{
-    background-image: url("../img/catering.webp");
+    background-image: url("catering.webp");
 }
 
 
@@ -1590,7 +1590,7 @@ nav {
 /* ===== SORT BUTTON ===== */
 .sort-wrapper {
     position: relative;
-    margin: 40px 0 20px 40px; /* top-left placement */
+    margin: 40px 0 20px 40px; 
     width: fit-content;
 }
 
@@ -1916,8 +1916,8 @@ nav {
     min-width: 260px;
     z-index: 100;
 
-    max-height: 220px;      /* LIMIT HEIGHT */
-    overflow-y: auto;       /* ENABLE SCROLL */
+    max-height: 220px;      
+    overflow-y: auto;       
 }
 
 .browse-dropdown a {
@@ -2139,19 +2139,19 @@ nav {
     font-size: 16px;
     cursor: pointer;
     border-radius: 4px;
-    transition: background-color 0.3s ease, transform 0.2s ease; /* smooth transition */
+    transition: background-color 0.3s ease, transform 0.2s ease; 
 }
 
 /* Hover effect */
 .add-cart-btn:hover {
-    background-color: #788240; /* lighter green on hover */
-    transform: translateY(-2px); /* subtle lift effect */
+    background-color: #788240; 
+    transform: translateY(-2px); 
 }
 
 /* Active / click effect */
 .add-cart-btn:active {
-    background-color: #4E5528; /* darker green when clicked */
-    transform: translateY(0); /* reset lift */
+    background-color: #4E5528; 
+    transform: translateY(0); 
 }
 
 
@@ -2196,13 +2196,13 @@ nav {
 
 /* ACTIVE STATE */
 .accordion-item.active .accordion-content {
-    max-height: 200px; /* enough for text */
+    max-height: 200px; 
     opacity: 1;
     padding-bottom: 15px;
 }
 
 .accordion-item.active .accordion-header .icon {
-    transform: rotate(45deg); /* + turns into × */
+    transform: rotate(45deg); 
 }
 
 
@@ -2247,7 +2247,7 @@ nav {
 /* ===================== SMALLER TABLET - 768px ===================== */
 @media (max-width: 768px) {
     .product-detail {
-        grid-template-columns: 1fr; /* stack columns */
+        grid-template-columns: 1fr; 
         gap: 30px;
         padding: 0 60px;
     }
@@ -2438,7 +2438,7 @@ nav {
 
 #submit-order-btn {
     padding: 15px 25px;
-    background-color: #5A6030; /* WhatsApp green */
+    background-color: #5A6030; 
     color: #fff;
     font-size: 16px;
     font-family: "Lato", sans-serif;
@@ -2828,4 +2828,5 @@ nav {
         border-radius: 12px;
     }
 }
+
 
